@@ -1,0 +1,27 @@
+<div class="parcelPageCard___2kbA_">
+    <div class="parcelPageCardInner___3gjFU">
+        <div class="header___2keEQ">
+            <div class="headerText___2iNLG">
+                <span class="shippingLabel___1aEgv">@lang('orders.order_number')</span>{{$order->number}}<br/>
+                <span class="shippingLabel___1aEgv">@lang('orders.delivery')</span>{{date('d.m',strtotime($order->created_at) + 432000)}} - {{date('d.m',strtotime($order->created_at) + 2592000)}}
+            </div>
+                @if($order->payment_status == 'success')
+                    <div class="badge___2y7_R statusBadge___28FjV"
+                         style="color: rgb(255, 255, 255); background-color: #82bb37;">
+                        @lang('orders.success_payment')
+                    </div>
+                @else
+                    <div class="badge___2y7_R statusBadge___28FjV"
+                         style="color: rgb(255, 255, 255); background-color: #f6731c;">
+                        @lang('orders.incomplete_payment')
+                    </div>
+                @endif
+        </div>
+    </div>
+    @if($order->items)
+        @foreach($order->items as $counter => $item)
+            @continue(!isset($item->post))
+            @include('account.inc.orderItem_block')
+        @endforeach
+    @endif
+</div>

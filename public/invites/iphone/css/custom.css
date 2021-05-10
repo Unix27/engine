@@ -1,0 +1,859 @@
+html * {
+  -webkit-font-smoothing: antialiased;
+}
+/*----------------------------------------
+  5. Google Font
+  ----------------------------------------*/
+  @import 'https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,500,700';
+
+/***************************
+CAMPAIGN TOP CONTENT
+****************************/
+.around {
+  background-image: url(../img/starbackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.campaign-area {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  max-width: 1400px;
+}
+.title-1 {
+  color: #000;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1;
+  margin-top:20px;
+  margin-top:15%;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.title-2 {
+  color: #767676;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  text-transform: none;
+  text-align: center;
+}
+.title-22 {
+  padding-top:20px;
+}
+.title-3 {
+  color: #737373;
+  color: #828282;
+  font-size: 17px;
+  line-height: 19px;
+  position: relative;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+h4 {
+  font-size: 16px;
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: rgba(226, 26, 96, 0.9);
+  color: #767676;
+  padding-left: 2.2%;
+  padding-top: .5%;
+  padding-bottom: 0;
+  margin-bottom:0;
+}
+
+/*FOR subpages*/
+.title-4 {
+  /*  color: #000;before*/
+  color: #FFF;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 20px;
+  margin-top:25%;
+  position: relative;
+  text-transform: uppercase;
+}
+.phone {
+  height:auto;
+  max-width: 80%;
+  margin-bottom: 2%;
+  margin-top:0;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+  padding-top: 10%;
+}
+.form-wrap {
+  background-color: transparent;
+  max-width: 405px;
+  position: relative;
+  z-index: 3;
+  padding-left: 0px;
+  padding-right: 0;
+  padding-top: 7%;
+}
+a:focus,
+a:hover {
+  color: #1428a0;
+  text-decoration: none;
+}
+.tag {
+  color: #FFF;
+  border-radius: 50% 50% 50% 0;
+  height: 180px;
+  width:180px;
+  /*    line-height: 180px;*/
+  text-align: center;
+  top:35%;
+  /*    right: 0%;*/
+  left:85%;
+  position: absolute;
+  background-color: #dd7d00;
+  /*    margin: -20px 0 0 -20px;*/
+  /*    transform: skewY(-1.7deg);*/
+  padding: 30px 15px 0px 15px;
+  z-index: 2;
+}
+.tag span {
+  /*    display: block;*/
+  /*    vertical-align: middle;*/
+  line-height: 35px;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin:0;
+  padding: 0;
+  max-width: 100%;  
+}
+.tag span.price {
+  font-size: 78px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  margin:0;
+  padding: 0;
+  line-height: 70px;
+  white-space: nowrap;
+  display: inline-block;
+}
+.tag span.incl {
+  font-size: 12px;
+  text-transform: none;
+  margin:0;
+  padding: 0;
+  /*   margin-top: -70px;*/
+  line-height: 13px;
+  display:block;
+  position:relative;
+  
+  white-space: pre-wrap;      /* CSS3 */   
+  white-space: -moz-pre-wrap; /* Firefox */    
+  white-space: -pre-wrap;     /* Opera <7 */   
+  white-space: -o-pre-wrap;   /* Opera 7 */    
+  word-wrap: break-word;      /* IE */
+}
+.tag span.curr {
+  font-weight: 500;
+  font-size: 16px;
+  vertical-align:baseline;
+  letter-spacing: 0em;
+  white-space: nowrap;
+  margin:0;
+  margin-left: -16px;
+  padding: 0;
+  text-transform: none;
+}
+
+
+.pad {
+  margin-top: -30%;
+  margin-bottom: 10%;
+}
+
+
+
+/***************************
+SECTION
+****************************/
+
+.section-bg-tb {
+  margin: 25px 0;
+  position: relative;
+  z-index: 1;
+}
+.section-bg-tb::before {
+/*
+  background: #F5F5F5 none repeat scroll 0 0;
+  background-image: linear-gradient(rgb(245, 245, 245) 0%, rgb(228, 228, 228) 100%);
+  */
+  background:#FFF;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  /*  transform: skewY(-1.7deg);*/
+  width: 100%;
+  z-index: -1;
+}
+
+
+/***************************
+FORMS
+****************************/
+
+.choice-wrap {
+  background-color: transparent;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.chrome a,
+.safari a {
+  outline-offset: -3px;
+}
+
+div[class*=choice-wrap] a>span {
+  position: absolute;
+  left: -99999px;
+  font-size: 0;
+  line-height: 0;
+}
+
+.choice-wrap a {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: -3px;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+}
+
+/*
+.choice-wrap a:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}
+*/
+.choice-wrap a:before {
+  content: '';
+  width: 26px;
+  height: 26px;
+  margin-top: -13px;
+  margin-left: -13px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}
+
+/*Make both dot and circle round*/
+.choice-wrap a:after,
+.choice-wrap a:before {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+}
+/*Make circle with solid border*/
+.choice-wrap a:after {
+  width: 0;
+  height: 0;
+  border-width: 2px; /*Changes from 1 - S8+*/
+  border-style: solid;
+  opacity: 0;
+}
+
+/*Effect*/
+.choice-wrap a:after, .choice-wrap a:before {
+  transition: all .35s ease-in;
+  -webkit-transition: all .35s ease-in;
+  -moz-transition: all .35s ease-in;
+  -o-transition: all .35s ease-in;
+}
+
+/*Color of dot in the middle*/
+.choice-wrap a.c1:before {
+  background-color: #daccb3
+}
+.choice-wrap a.c2:before {
+  background-color: #00091e
+}
+.choice-wrap a.c3:before {
+  background-color: #fff;
+  border: solid 1px #f0f0f0;
+}
+.choice-wrap a.c4:before {
+  background-color: #b4bfc5
+}
+.choice-wrap a.c5:before {
+  background-color: #f3c2bd
+}
+/*------- Colors for S8+ -------*/
+.choice-wrap a.c6:before {
+  background-color: #000;
+  border: 1px solid rgba(255, 255, 255, .45);
+}
+.choice-wrap a.c7:before {
+  background-color: #61506a;
+  border: 1px solid rgba(255, 255, 255, .45);
+}
+.choice-wrap a.c8:before {
+  background-color: #9a9b9f;
+  border: 1px solid rgba(255, 255, 255, .45);
+}
+/*SA instead of grey*/
+.choice-wrap a.c9:before {
+  background-color: #9e8a73;
+  border: 1px solid rgba(255, 255, 255, .45);
+}
+
+
+/*Color of circle around dot*/
+.choice-wrap a.c1.on:after,
+.choice-wrap a.c1:after {
+  border-color: #daccb3
+}
+.choice-wrap a.c2.on:after,
+.choice-wrap a.c2:after {
+  border-color: #00091e
+}
+.choice-wrap a.c3.on:after,
+.choice-wrap a.c3:after {
+  border-color: #e6e6e6
+}
+.choice-wrap a.c4.on:after,
+.choice-wrap a.c4:after {
+  border-color: #b4bfc5
+}
+.choice-wrap a.c5.on:after,
+.choice-wrap a.c5:after {
+  border-color: #f3c2bd
+}
+/*------- Colors for S8+ -------*/
+.choice-wrap a.c6.on:after,
+.choice-wrap a.c6:after, .choice-wrap a.c7.on:after,
+.choice-wrap a.c7:after, .choice-wrap a.c8.on:after,
+.choice-wrap a.c8:after, .choice-wrap a.c9.on:after,
+.choice-wrap a.c9:after  {
+  border-color: #333
+}
+
+
+.choice-wrap a:hover:before,
+.choice-wrap a.on:before,
+.choice-wrap a:hover:before {
+  box-shadow: 2px 2px 2px rgba(255, 255, 255, 0);
+}
+/* Changed for S8+ to below this outcommented part
+.choice-wrap a.on:after,
+.choice-wrap a:hover:after,
+.choice-wrap a.on:after,
+.choice-wrap a:hover:after {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -15px
+}
+*/
+.choice-wrap a.on:after,
+.choice-wrap a:hover:after,
+.choice-wrap a.on:after,
+.choice-wrap a:hover:after {
+  width: 26px;
+  height: 26px;
+  margin-top: -13px;
+  margin-left: -13px
+}
+.choice-wrap a:hover:after,
+.choice-wrap a.on:after {
+  opacity: 1;
+  content: ' ';
+}
+
+
+/*custom-select*/
+.custom-select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.custom-select {
+  background: rgba(255, 255, 255, 1) url("../img/icon/down-arrow.png") no-repeat scroll 93% center;
+  border: 1px solid #d7d7d7;
+  height: 40px;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 7px;
+}
+.custom-select option {
+  font-size: 13px;
+  padding: 2px 0 0 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus {
+  border: 1px solid #1428a0;
+}
+.form-wrap.row.col-sm-6 {
+  padding:0px;
+}
+input[type="text"].half, select.half {
+
+}
+
+/* Webkit */
+::-webkit-input-placeholder { color: #CCC; }
+
+/* Firefox 4-18 */
+:-moz-placeholder { color: #CCC; }
+
+/* Firefox 19+ */
+::-moz-placeholder { color: #CCC; }
+
+/* IE10+ */
+:-ms-input-placeholder { color: #CCC; }
+
+
+/***************************
+SCROLL UP 
+****************************/
+#scrollUp {
+  background: #727272;
+  bottom: 15px;
+  color: #ffffff;
+  font-size: 55px;
+  height: 58px;
+  line-height: 58px;
+  right: 15px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  width: 58px;
+  border-radius: 6%;
+  font-weight: normal;
+}
+#scrollUp i {
+  padding-top: 5%;
+}
+#scrollUp:hover {
+  background: #1428a0 none repeat scroll 0 0;
+}
+
+
+
+
+/* -------------------------------------
+    Section with features
+    ------------------------------------- */
+
+    h2 {
+      font-size: 42px;
+      font-weight: 600;
+      line-height: 44px;
+      text-transform: none;
+    }
+    .product-tab-section h2 {
+     color:#000;
+   }
+   .product-item {
+    /*  margin-bottom: 30px;*/
+    transition: all 0.3s ease 0s;
+    min-height: 220px;
+  }
+  .product-info {
+    padding: 50px 0 20px 0;
+    text-align: center;
+    max-width: 50%;
+    margin:0 auto;
+  }
+  .product-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 23px;
+  }
+
+  .product-tab {
+       margin-bottom: 100px;
+  }
+  .product-tab-2 {
+        margin-bottom: 100px;
+  }
+
+  .product-tab:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .product-tab ul, ol {
+    list-style: none;
+    display: block;
+    line-height: 15.6px;
+    list-style-image: none;
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0;
+    padding: 0;
+  }
+  .product-tab li {
+    border-bottom: 0;
+    width: 25%;
+    top: 55px;
+    float: left;
+    position: relative;
+    list-style: none;
+    display: list-item;
+    text-align: -webkit-match-parent;
+  }
+  .product-tab-2 li {
+    top: 15px;
+  }
+
+  .product-tab ul li .spec-wrapper {
+    padding-right: 30px;
+  }
+  .product-tab span.icon-size img {
+    width: 100%;
+    min-width: 60%;
+    max-width: 80%;
+    height: 100%;
+    width: 200px;
+    /*    height: 200px;*/
+  }
+  .spec-wrapper .icon {
+    position: absolute;
+    left: 0;
+    top: 0
+  }
+  .product-tab .spec-wrapper .inner-wrap {
+    display: block;
+    padding-top: 75%;
+    padding-left: 20px;
+    position: relative;
+  }
+  .product-tab-2 .spec-wrapper .inner-wrap {
+    padding-top: 25px;
+    padding-left: 0px;
+  }
+  .product-tab .spec-wrapper .spec-head {
+    margin-bottom: 9px;
+    color: #333;
+  }
+  .product-tab .spec-wrapper .spec-head {
+    margin-bottom: 9px;
+    color: #000;
+    font-weight: 700;
+    font-size: 25px;
+
+  }
+  .product-tab .spec-wrapper .spec-text {
+    padding-right: 10px;
+    color: #666;
+  }
+  .product-tab .spec-wrapper .spec-text2 {
+    padding-right: 10px;
+    color: #666;
+	font-size:24px;
+	line-height:28px;
+  }
+  p.desc {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 14px;
+    margin-top: 20px;
+    z-index: 9;
+  }
+  p.spec {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 18px;
+    font-size: 14px;
+    margin-top: 20px;
+    z-index: 9;
+  }
+  p.spec span {
+    padding-left:15px;
+    padding-right: 15px;
+  }
+
+  p.banner-title, p.banner-content {
+    font-family: 'Poppins', sans-serif;
+    line-height: 18px;
+    font-size: 14px;
+    z-index: 9;
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+  p.banner-title {
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  p.banner-content a {
+    cursor: pointer;
+    color:#999;
+    text-decoration: underline;
+  }
+  p.banner-content a:hover {
+    cursor: pointer;
+    
+    color:#1428a0;
+  }
+
+  .pro-tab-menu {
+    margin: 25px 0 20px;
+  }
+  .pro-tab-menu ul li {
+    display: inline-block;
+    margin-left: 30px; 
+  }
+  .pro-tab-menu ul li:first-child {
+    margin-left: 0;
+  }
+  .pro-tab-menu ul li a {
+    color: #999999;
+    /*  display: block;*/
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .pro-tab-menu ul li.active a {
+    border-bottom: 1px solid #1428a0;
+    color: #666666;
+  }
+
+  /*-terms section-*/
+  p.terms {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    line-height: 18px;
+  }
+  .terms-info {
+    padding: 30px 0 20px 0;
+    text-align: center;
+    max-width: 70%;
+    margin:0 auto;
+  }
+  .terms-info h6 {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin-bottom: 40px;
+    padding:0 10%;
+    line-height: 25px;
+  }
+
+
+  .help {
+    z-index: 3;
+    width: 64px;
+    height: auto;
+    margin: 0 0 0 1.8%;
+  }
+  .cards {
+   height:30px;
+   width: 224px;
+   max-width:100%;
+   margin-bottom: 25px;
+ }
+
+ /*BELOW is going to be in all campaigns - can be modified a little if needed eg color of overlay*/
+
+ .overlay{
+   width: 100%;
+   height: 100%;
+   background-color: rgba(64,64,64,.8);
+   position: fixed;
+   top:0;
+   left:0;
+   z-index: 25;
+   display:none;
+ }
+
+ .overlay.show{
+   display:block;	
+ }
+
+ .modal{
+   border: 1px solid #999999;
+   color: #999999;
+   position: fixed;
+   left: 50%;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   z-index:25;
+   background-color: #fff;
+   display:none;
+ }
+
+ .modal p, .modal span{
+   color: #999999;
+ }
+ .modal .close {
+   float:right;
+   border: 0;
+   font-size: 23px;
+   background-color: transparent;
+ }
+
+ .modal .modal-footer a{
+   float: right;
+   margin-right: 10px;
+ }
+
+ /*Below is the styling for the validator*/
+ .qtip-custom {
+   background-color:#fff;
+   border-color:#D8000C;
+   color:#D8000C;
+ }
+ input[type="text"].error, input[type="tel"].error, input[type="email"].error, select.error {
+  color: #D8000C;
+  background-color: #FFBABA;
+  background-color:rgba(247, 91, 91, 0.1);
+  border:1px solid #D8000C;
+  -webkit-text-fill-color: red !important;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(247, 91, 91, 0.1) inset;
+}
+
+/* EPRO */
+
+.chelp {
+	display:block;
+  width: 69px;
+  height: auto;
+  margin-top: 10px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.ebtn {
+	margin-top: 15px;
+  width:100%;
+}
+
+.epro-s {
+	clear: both;
+  display: block;
+  margin: 0 auto 0;
+  padding-top: 10px;
+  width: 64px;
+  height: auto;
+}
+.eterms {
+  float: left;
+  margin-top: 5px;
+  color: #fff; 
+  text-align: center;
+  width: 100%;
+}
+label.check-terms {
+  font-size: 11px;
+  line-height: 14px;
+}
+.check-terms a{
+  text-decoration:inherit;
+  color:inherit; 
+}
+
+.field {
+  font-size:20px;
+  margin-top:10px;
+  display:inline-block;
+}
+.cvc.field {
+  margin-left:15px;
+}
+label {
+  display:block;
+}
+.error label {
+  color: red;
+}
+input {
+  font-size:20px;
+  padding:7px;
+  border-radius:7px;
+  border: 1px solid #ccc;
+}
+.error input {
+  color: red;
+  border: 1px solid red;
+}
+#submit {
+  font-size:16px;
+  margin-top:20px;
+  padding:7px;
+  margin-bottom:30px;
+  border-radius:7px;
+  border: 1px solid #555;
+  color:#eee;
+  background-color:#555;
+  cursor: pointer;
+}
+#infos_btn, #paiement_btn {
+  margin-top: 20px; 
+}
+.title-3 {
+  font-size: 13px;
+  text-align: center;
+  margin-bottom:15px;
+}
+.help-green {
+  width: 30px;
+  margin-left: 10px;
+}
+.counter {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+.loader {
+  margin: auto;
+  margin-top: 120px;
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #3498db;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#cvc {
+  width: initial;
+  padding-left: 35px;
+}

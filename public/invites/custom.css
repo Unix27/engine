@@ -1,0 +1,923 @@
+#progressWrapper {
+  padding-left: 120px;
+  position: relative;
+  top: -132px;
+}
+
+#mfw_fieldset_agbs {
+  height: 87px;
+}
+
+
+.subSiteContent > h1 {
+  font-size: 25px;
+}
+
+.subSiteContent > h3 {
+  font-size: 20px;
+}
+
+.subSiteContent > p {
+  font-size: 18px;
+}
+
+.mfwOk {
+  color: #008810;
+}
+
+.step_5, .red {
+  color: #ff0000;
+}
+.green {
+  color: #2E7712;
+}
+.mfwOk input[type="text"] {
+  background-color: #B6FFB2;
+  border: 1px solid #00BA16;
+}
+
+.mfwOk select {
+  background-color: #B6FFB2;
+  border: 1px solid #00BA16;
+}
+
+.mfwError {
+  color: red;
+}
+
+.mfwError input[type="text"] {
+  background-color: #FFBBBB;
+  border: 1px solid #f00;
+}
+
+.mfwError select {
+  background-color: #FFBBBB;
+  border: 1px solid #f00;
+}
+.mfw_adressData_agb1,
+.mfw_adressData_agb2,
+.mfw_submit {
+  display:block;
+  margin:auto;
+  line-height:16px;
+  padding:15px 2.5%;
+  color:#d6d0d0;
+  text-align:center;
+  cursor:pointer;
+  font-size:1.8em;
+  font-weight:bold;
+  border:1px solid #3d7bb0;
+  background:#7ee5ff;
+  background:-moz-linear-gradient(top,  #7ee5ff 0%, #50b4ff 100%);
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#7ee5ff), color-stop(100%,#50b4ff));
+  background:-webkit-linear-gradient(top,  #7ee5ff 0%,#50b4ff 100%);
+  background:-o-linear-gradient(top,  #7ee5ff 0%,#50b4ff 100%);
+  background:-ms-linear-gradient(top,  #7ee5ff 0%,#50b4ff 100%);
+  background:linear-gradient(to bottom,  #7ee5ff 0%,#50b4ff 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ee5ff', endColorstr='#50b4ff',GradientType=0 );
+  -webkit-border-radius:6px 6px 6px 6px;
+  border-radius:6px 6px 6px 6px;
+  -webkit-box-shadow:1px 1px 0 1px #d3dee2;
+  box-shadow:1px 1px 0 1px #d3dee2;
+}
+
+.mfw_submit {
+  color: #fff;
+}
+
+
+.info_progress > img {
+    vertical-align: middle;
+}
+
+a.button_skip {
+  display: inline-block;
+  padding-top: 14px;
+  color: #D50101 !important;
+  text-decoration: none !important;
+}
+
+.button:hover,
+.mfw_adressData_agb1:hover,
+.mfw_adressData_agb2:hover,
+.mfw_submit:hover {
+  background:#b0efff;
+  background:-moz-linear-gradient(top,  #b0efff 0%, #50b4ff 100%);
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#b0efff), color-stop(100%,#50b4ff));
+  background:-webkit-linear-gradient(top,  #b0efff 0%,#50b4ff 100%);
+  background:-o-linear-gradient(top,  #b0efff 0%,#50b4ff 100%);
+  background:-ms-linear-gradient(top,  #b0efff 0%,#50b4ff 100%);
+  background:linear-gradient(to bottom,  #b0efff 0%,#50b4ff 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0efff', endColorstr='#50b4ff',GradientType=0 );
+}
+
+.mfw_adressData_agb1,.mfw_adressData_agb2 {
+  padding:15px 2.5%;
+  padding-bottom:10px;
+  padding-top:5px;
+}
+.mfw_adressData_agb1 input,.mfw_adressData_agb2 input {
+  display: none;
+}
+.mfw_adressData_agb1 span,.mfw_adressData_agb2 span {
+  display: block;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 1em;
+  text-align: justify;
+}
+
+.mfw_adressData_agb1 span.middle,.mfw_adressData_agb2 span.middle {
+  width: 100%;
+  text-align: center;
+  line-height: 3em;
+}
+
+.mfw_adressData_agb1 span a, .mfw_adressData_agb1 span a:link,
+.mfw_adressData_agb2 span a, .mfw_adressData_agb2 span a:link {
+  color: #d6d0d0;
+}
+
+.mfw_adressData_agb1 span .button_blink, .mfw_adressData_agb1 span .u,
+.mfw_adressData_agb2 span .button_blink, .mfw_adressData_agb2 span .u {
+  display: inline;
+  text-align: center;
+  color: #f00;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.mfw_adressData_agb2 {
+  display: none;
+}
+
+#button_step_4,#button_step_5 {
+  display: none;
+  margin-left: 120px;
+}
+
+#button_step_4 img {
+  padding-top: 10px;
+}
+
+#mfw_submit_adressInputStep2 {display: none;}
+
+#mfw_fieldset_agbs {
+  padding-left:120px;
+  margin-top: 30px; 
+}
+
+.mfw_adressData_email {
+    clear: both;
+}
+.progressTextLeft {
+  float: left;
+  font-size: 15px;
+  padding-top: 2px;
+  padding-left: 2px;
+  color: #fff;
+}
+.progressTextRight {
+  float: right;
+  font-size: 15px;
+  padding-top: 2px;
+  padding-right: 2px;
+  color: #fff;
+}
+
+.button_text, .button_header {
+  line-height: 20px;
+}
+.box {
+  margin-top: 10px !important;
+  overflow: initial !important;
+}
+#mfw_fieldset_inputData p {
+  position: relative;
+  display: block;
+  height: 42px;
+}
+#mfw_fieldset_inputData img {
+    left: 95%;
+    position: absolute;
+    top: 8px;
+}
+
+#mfw_fieldset_inputData p input,
+#mfw_fieldset_inputData p select,
+.mfw_submit {
+  width:100%;
+  float:right;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+.mfw_submit {
+  width:100%;
+}
+
+#mfw_fieldset_inputData .mfw_adressData_anrede {
+  font-size: 1.4em;
+}
+#mfw_fieldset_inputData .mfw_adressData_anrede label {
+  font-size: 1.0em;
+}
+#mfw_fieldset_inputData .mfw_adressData_anrede input {
+  clear: both !important;
+  float: none !important;
+  width: 50px !important;
+  margin-bottom: 11px;
+  margin-top: 18px;
+}
+
+
+#mfw_fieldset_inputData .mfw_adressData_strasse {width: 85%;float:left;}
+#mfw_fieldset_inputData .mfw_adressData_strasse img {left: 90%;}
+#mfw_fieldset_inputData .mfw_adressData_strasse input {width: 70%; float: left;margin-left: 2px;}
+
+#mfw_fieldset_inputData .mfw_adressData_hausnr {width: 15%; float: right;}
+#mfw_fieldset_inputData .mfw_adressData_hausnr label {display: none;}
+#mfw_fieldset_inputData .mfw_adressData_hausnr img {left: 68%;}
+#mfw_fieldset_inputData .mfw_adressData_hausnr input {width: 100%; float: left;}
+
+#mfw_fieldset_inputData .mfw_adressData_plz {clear: both;}
+#mfw_fieldset_inputData .mfw_adressData_plz {width: 45%;float: left;}
+#mfw_fieldset_inputData .mfw_adressData_plz img {left: 88%;}
+#mfw_fieldset_inputData .mfw_adressData_plz input {width: 48%;float: left;margin-left: 2px;}
+
+#mfw_fieldset_inputData .mfw_adressData_ort {width: 54%; float: right;}
+#mfw_fieldset_inputData .mfw_adressData_ort label {display: none;}
+#mfw_fieldset_inputData .mfw_adressData_ort img {left:90%;}
+#mfw_fieldset_inputData .mfw_adressData_ort input {width: 99%;float: left;margin-left: 2px;}
+
+#mfw_fieldset_inputData .mfw_adressData_land {clear: both;}
+
+#mfw_fieldset_inputData .mfw_adressData_gebDatum select {float: none;}
+.mfw_daySelect,.mfw_monthSelect,.mfw_yearSelect {width: 25% !important;}
+.mfw_daySelect,.mfw_monthSelect{
+  margin-left: 2px;
+  margin-right: 4px;
+}
+
+/* Multicoreg START */
+/* Attention Box START */
+#page_multicoreg #content p.info_progress {
+  text-align: center;
+  font-size: 14px;
+}
+#page_multicoreg .attention {
+  border:5px dashed #c00;
+  color:#c00;
+  margin:15px auto 25px;
+  padding:10px 15px;
+  max-width:800px;
+}
+
+#page_multicoreg .attention h3 {
+  margin:0;
+  font-size:1.9em;
+}
+
+#page_multicoreg .attention p {
+  font-size:2.25em;
+  color:#000;
+}
+@media (max-width: 960px) {
+  #page_multicoreg #header_top {
+    display: none;
+  }
+}
+
+.window {
+  display: none;
+  width: 400px;
+  background-color: #fff;
+  border: 2px solid #50b4ff;
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -200px;
+  padding-bottom: 10px;
+  z-index: 1000;
+  font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+}
+.winHeader {
+  height: 43px;
+  border-bottom: 2px solid #004884;
+  border-radius: 2px 2px 0 0;
+  background-color: #004884;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+   line-height: 22px;
+   padding-left: 5px;
+   color: #fff;
+   font-size: 16px;
+}
+.winMain {
+  height: 50px;
+  padding-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+}
+.buttons {
+  float: right;
+  margin-right: 10px;
+}
+
+.buttons button {
+  padding: 10px;
+  margin: 2px;
+  border: 1px solid #004884;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #7ee5ff 0%, #50b4ff 100%) repeat scroll 0 0;
+  cursor: pointer;
+  color: #004884;
+}
+/* Attention Box END */
+/* Multicoreg END */
+
+.kiosk { margin-bottom: 20px; margin-left: 20px; margin-right: 20px; padding-left: 20px; padding-right: 20px; padding-bottom: 20px;}
+.kiosk img { float: left;  width: 75px;}
+.kiosk a { float: right;}
+
+#mfw_fieldset_ownCoregData { clear: both; font-size: 15px; color: #606060;}
+#mfw_fieldset_ownCoregData label { color: #c00; font-size: 1em; display: block; margin: 5px 0; margin-bottom: 15px;}
+#mfw_fieldset_ownCoregData p { color: #000 !important; 
+    font-weight: bold;
+    line-height: 1.2em;}
+#mfw_fieldset_ownCoregData div[class*="mfw_coreg"] {height: auto;margin-bottom: 20px; background-color: white; padding: 15px 10px;}
+#mfw_fieldset_ownCoregData input {margin-left: 0;}
+#mfw_fieldset_ownCoregData p+input {margin-left: 0;}
+
+/* ############################### */
+/* ####  Sponsorbox           #### */
+/* ############################### */
+.mfw_sponsorAssignment_ {
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 5px #000;
+    display: none;
+    left: 0;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 0;
+    width: 380px;
+    z-index: 100;
+    color: #000;
+}
+.mfw_sponsorAssignment_ p {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 12px;
+    float: none !important;
+    clear: both !important;
+    color: #000;
+}
+.sponsorHeader {
+    line-height: 10px;
+    padding: 15px 10px 0px 10px;
+}
+.sponsorNavi {
+  height: 35px;
+  font-size: 12px;
+}
+
+.sponsorNavi ul {
+    height: 21px;
+    margin: 0 0px;
+  padding: 0 10px;
+}
+
+.sponsorNavi li {
+    background-color: #fff;   
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    margin-right: 0px;
+    padding: 4px 6px;
+    position: relative;
+    top: 1px;
+    border-radius: 10px;
+}
+
+.sponsorNavi li.active {
+  background-color: #004884;
+    color: #fff;
+    cursor: default;
+}
+.sponsorListe{
+    width:361;
+    height:222px;
+    max-height:222px;
+    background-color: #fff;
+    overflow: auto;
+    font-weight: normal;
+}
+.sponsors, .freeSponsors {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  font-size: 12px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  height: auto;
+}
+
+.sponsors p, .freeSponsors p {
+  height: auto !important;
+}
+
+.sponsors input, .freeSponsors input {
+  float: left;
+}
+.sponsorText,
+.spText {
+  line-height: 10px;
+  height: auto !important;
+}
+.closeButton {
+    background-color: #004884;
+    border: 1px solid #004884;
+  border-bottom: 0px solid #000;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    cursor: pointer;
+    height: 30px;
+    position: absolute;
+    right: -1px;
+    text-align: center;
+    top: -25px;
+    width: 100%;
+    line-height: 30px;
+  font-size: 18px;
+}
+.sponsorText > small, 
+.spText > small {
+    /*margin-left: 10px;*/
+}
+
+
+#mfw_fieldset_inputData .mfw_adressData_vorname {
+    float: left;
+    width: 49%;
+}
+
+#mfw_fieldset_inputData .mfw_adressData_name {
+    float: right;
+    width: 49%;
+}
+
+.footerContentWrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media (min-width:0px) {
+  #content .column_left .prize_image {
+      top: 7px !important;
+      left: 10px;
+  }
+  #progressWrapper {
+    padding-left: 0;
+  }
+  #mfw_fieldset_agbs {
+    padding-left: 0;
+  }
+  #button_step_4,#button_step_5 {   
+    margin-left: 0;
+  }
+
+  #mfw_fieldset_inputData p {
+    /*height: 60px;*/
+  }
+
+ /* #mfw_fieldset_inputData .mfw_adressData_hausnr input {
+    margin-top: 20px;
+  }*/
+  #mfw_fieldset_inputData .mfw_adressData_strasse input {
+    width: 97%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_plz {
+    width: 25%;
+  }
+  #mfw_fieldset_inputData .mfw_adressData_plz input{
+    width: 99%;
+  }
+
+  #mfw_fieldset_inputData .mfw_adressData_ort { 
+    width: 73%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_ort input{
+    width: 99%;
+    /*margin-top: 20px;*/
+  }
+  #mfw_fieldset_inputData .mfw_adressData_land {
+    width: 100%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_land select {
+    width: 100%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_gebDatum  label {
+    width: 100%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_gebDatum  span {
+    float: none;
+  }
+  #mfw_fieldset_inputData .mfw_adressData_gebDatum  span select {
+    width: 32.4% !important;
+  }
+  #mfw_fieldset_inputData .mfw_adressData_telefon1 input,
+  #mfw_fieldset_inputData .mfw_adressData_telefon2 input{
+    width: 100%
+  }
+  .footerContentWrapper .footerBild {
+    width: 100%;
+    float: left;
+    text-align: center;
+  }
+  .footerContentWrapper #footerMenu.inner, .footerContentWrapper #footerContent.inner {
+    width: 100%;
+    float: right;
+    text-align: center;
+  }
+}
+
+@media (max-width:480px) {
+  #umfrage #content .column_left .prize_image {
+    top: -20px !important;
+    left: 10px;
+  }
+  #progressWrapper {
+    padding-left: 0;
+  }
+  #mfw_fieldset_agbs {
+    padding-left: 0;
+  }
+  #button_step_4,#button_step_5 {   
+    margin-left: 0;
+  }
+
+  #mfw_fieldset_inputData p {
+    /*height: 60px;*/
+  }
+
+  /*#mfw_fieldset_inputData .mfw_adressData_hausnr input {
+    margin-top: 20px;
+  }*/
+  #mfw_fieldset_inputData .mfw_adressData_strasse input {
+    width: 97%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_plz {
+    width: 25%;
+  }
+  #mfw_fieldset_inputData .mfw_adressData_plz input{
+    width: 99%;
+  }
+
+  #mfw_fieldset_inputData .mfw_adressData_ort { 
+    width: 73%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_ort input{
+    width: 99%;
+    /*margin-top: 20px;*/
+  }
+  #mfw_fieldset_inputData .mfw_adressData_land {
+    width: 100%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_land select {
+    width: 100%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_gebDatum  label {
+    width: 100%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_gebDatum  span {
+    float: none;
+  }
+  #mfw_fieldset_inputData .mfw_adressData_gebDatum  span select {
+    width: 31.8% !important;
+  }
+  #mfw_fieldset_inputData .mfw_adressData_telefon1 input,
+  #mfw_fieldset_inputData .mfw_adressData_telefon2 input{
+    width: 100%
+  }
+  .mfw_sponsorAssignment_ {
+    margin-left: -9px;
+    width: 298px;
+  }
+  .window {
+    width: 300px;
+    margin-left: -150px;
+  }
+  .footerContentWrapper .footerBild {
+    width: 100%;
+    text-align: center;
+  }
+  .footerContentWrapper #footerMenu.inner, .footerContentWrapper #footerContent.inner {
+    width: 100%;
+    float: right;
+    text-align: center;
+  }
+}
+@media (max-width:380px) {
+  #umfrage #content .column_left .prize_image {
+    top: 0px !important;
+  }
+}
+@media (min-width:600px) {
+  #content .column_left .prize_image {
+    top: 7px !important;
+    left: 10px;
+  }
+  #progressWrapper {
+    padding-left: 0;
+  }
+  #mfw_fieldset_agbs {
+    padding-left: 0;
+  }
+  #button_step_4,#button_step_5 {
+    margin-left: 0;
+  }
+  #mfw_fieldset_inputData p {
+    /*height: 60px;*/
+  }
+
+  /*#mfw_fieldset_inputData .mfw_adressData_hausnr input {
+    margin-top: 20px;
+  }*/
+  #mfw_fieldset_inputData .mfw_adressData_strasse input {
+    width: 97%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_plz {
+    width: 25%;
+  }
+  #mfw_fieldset_inputData .mfw_adressData_plz input{
+    width: 99%;
+  }
+
+  #mfw_fieldset_inputData .mfw_adressData_ort { 
+    width: 73%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_ort input{
+    width: 99%;
+    /*margin-top: 20px;*/
+  }
+  #mfw_fieldset_inputData .mfw_adressData_land {
+    width: 100%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_land select {
+    width: 100%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_gebDatum  label {
+    width: 100%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_gebDatum  span {
+    float: none;
+  }
+  #mfw_fieldset_inputData .mfw_adressData_gebDatum  span select {
+    width: 31.8% !important;
+  }
+  #mfw_fieldset_inputData .mfw_adressData_telefon1 input,
+  #mfw_fieldset_inputData .mfw_adressData_telefon2 input{
+    width: 100%
+  }
+  .mfw_sponsorAssignment_ {
+    margin-left: -9px;
+    width: 298px;
+  }
+  .footerContentWrapper .footerBild {
+    width: 50%;
+    float: left;
+    text-align: left;
+  }
+  .footerContentWrapper #footerMenu.inner, .footerContentWrapper #footerContent.inner {
+    width: 50%;
+    float: right;
+    text-align: right;
+  }
+}
+
+@media (min-width:700px) {
+  #content .column_left .prize_image {
+    top: 7px !important;
+  }
+  #progressWrapper {
+    padding-left: 0;
+  }
+  #mfw_fieldset_agbs {
+    padding-left: 0;
+  }
+  #button_step_4,#button_step_5 {
+    margin-left: 0;
+  }
+
+  #mfw_fieldset_inputData p {
+    /*height: 60px;*/
+  }
+
+  /*#mfw_fieldset_inputData .mfw_adressData_hausnr input {
+    margin-top: 20px;
+  }*/
+  #mfw_fieldset_inputData .mfw_adressData_strasse input {
+    width: 97%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_plz {
+    width: 25%;
+  }
+  #mfw_fieldset_inputData .mfw_adressData_plz input{
+    width: 99%;
+  }
+
+  #mfw_fieldset_inputData .mfw_adressData_ort { 
+    width: 73%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_ort input{
+    width: 99%;
+    /*margin-top: 20px;*/
+  }
+  #mfw_fieldset_inputData .mfw_adressData_land {
+    width: 100%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_land select {
+    width: 100%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_gebDatum  label {
+    width: 100%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_gebDatum  span {
+    float: none;
+  }
+  #mfw_fieldset_inputData .mfw_adressData_gebDatum  span select {
+    width: 32.5% !important;
+  }
+  #mfw_fieldset_inputData .mfw_adressData_telefon1 input,
+  #mfw_fieldset_inputData .mfw_adressData_telefon2 input{
+    width: 100%
+  }  
+  .footerContentWrapper .footerBild {
+    width: 100%;
+    text-align: center;
+  }
+  .footerContentWrapper #footerMenu.inner, .footerContentWrapper #footerContent.inner {
+    width: 100%;
+    float: right;
+    text-align: center;
+  }
+}
+
+@media (min-width:701px) and (max-width:989px)  {
+
+  #mfw_fieldset_inputData p {
+    /*height: 60px;*/
+  }
+
+  /*#mfw_fieldset_inputData .mfw_adressData_hausnr input {
+    margin-top: 20px;
+  }*/
+  #mfw_fieldset_inputData .mfw_adressData_strasse input {
+    width: 97%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_plz {
+    width: 25%;
+  }
+  #mfw_fieldset_inputData .mfw_adressData_plz input{
+    width: 99%;
+  }
+
+  #mfw_fieldset_inputData .mfw_adressData_ort { 
+    width: 73%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_ort input{
+    width: 99%;
+    /*margin-top: 20px;*/
+  }
+  #mfw_fieldset_inputData .mfw_adressData_land {
+    width: 100%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_land select {
+    width: 100%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_gebDatum  label {
+    width: 100%
+  }
+  #mfw_fieldset_inputData .mfw_adressData_gebDatum  span {
+    float: none;
+  }
+  #mfw_fieldset_inputData .mfw_adressData_gebDatum  span select {
+    width: 32.2% !important;
+  }
+  #mfw_fieldset_inputData .mfw_adressData_telefon1 input,
+  #mfw_fieldset_inputData .mfw_adressData_telefon2 input{
+    width: 100%
+  }
+  .footerContentWrapper .footerBild {
+    width: 43%;
+    float: left;
+    text-align: left;
+  }
+  .footerContentWrapper #footerMenu.inner, .footerContentWrapper #footerContent.inner {
+    width: 57%;
+    float: right;
+    text-align: right;
+  }
+}
+
+@media (min-width:990px) {
+
+  #content .column_left .prize_image {
+      top: 0px !important;
+  }
+  #content .column_right {
+    width: 57% !important;
+}
+
+  #mfw_fieldset_inputData p {
+    position: relative;
+    display: block;
+    height: 42px;
+  }
+  #mfw_fieldset_inputData img {
+      left: 95%;
+      position: absolute;
+      top: 8px;
+  }
+
+  #mfw_fieldset_inputData p input,
+  #mfw_fieldset_inputData p select,
+  .mfw_submit {
+    width:100%;
+    float:right;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+  }
+  #mfw_fieldset_inputData .mfw_adressData_anrede {
+    font-size: 1.4em;
+  }
+  #mfw_fieldset_inputData .mfw_adressData_anrede label {
+    font-size: 1.0em;
+  }
+  #mfw_fieldset_inputData .mfw_adressData_anrede input {
+    clear: both !important;
+    float: none !important;
+    width: 50px !important;
+    margin-bottom: 11px;
+    margin-top: 18px;
+  }
+
+
+  #mfw_fieldset_inputData .mfw_adressData_strasse {width: 85%;float:left;}
+  #mfw_fieldset_inputData .mfw_adressData_strasse img {left: 90%;}
+  #mfw_fieldset_inputData .mfw_adressData_strasse input {width: 98%; float: left;margin-left: 2px;}
+
+  #mfw_fieldset_inputData .mfw_adressData_hausnr {width: 15%; float: right;}
+  #mfw_fieldset_inputData .mfw_adressData_hausnr label {display: none;}
+  #mfw_fieldset_inputData .mfw_adressData_hausnr img {left: 68%;}
+  #mfw_fieldset_inputData .mfw_adressData_hausnr input {width: 100%; float: left;margin-top: 0;}
+
+  #mfw_fieldset_inputData .mfw_adressData_plz {clear: both;}
+  #mfw_fieldset_inputData .mfw_adressData_plz {width: 23%;float: left;}
+  #mfw_fieldset_inputData .mfw_adressData_plz img {left: 88%;}
+  #mfw_fieldset_inputData .mfw_adressData_plz input {width: 98%;float: left;margin-left: 2px;}
+
+  #mfw_fieldset_inputData .mfw_adressData_ort {width: 77%; float: right;}
+  #mfw_fieldset_inputData .mfw_adressData_ort label {display: none;}
+  #mfw_fieldset_inputData .mfw_adressData_ort img {left:90%;}
+  #mfw_fieldset_inputData .mfw_adressData_ort input {width: 99%;float: left;margin-left: 2px;margin-top: 0;}
+
+  #mfw_fieldset_inputData .mfw_adressData_land {clear: both;}
+  #mfw_fieldset_inputData .mfw_adressData_land select{width: 99.7%;}
+
+  #mfw_fieldset_inputData .mfw_adressData_gebDatum {
+      height: 45px;
+      width: 100%;
+  }
+  #mfw_fieldset_inputData .mfw_adressData_gebDatum label {width: 100%;}
+  #mfw_fieldset_inputData .mfw_adressData_gebDatum select {float: none;}
+  #mfw_fieldset_inputData .mfw_adressData_gebDatum  span select {
+      width: 32.5% !important;
+  }  
+
+  #mfw_fieldset_inputData .mfw_adressData_telefon1 input{width: 99.7%;}
+  #mfw_fieldset_inputData .mfw_adressData_telefon2 input{width: 99.7%;}
+  .footerContentWrapper .footerBild {
+    width: 43%;
+    float: left;
+    text-align: left;
+  }
+  .footerContentWrapper #footerMenu.inner, .footerContentWrapper #footerContent.inner {
+    width: 57%;
+    float: right;
+    text-align: right;
+  }
+
+}

@@ -1,0 +1,77 @@
+{
+  "name": "apoca/laravel-sibs-payments",
+  "description": "Laravel library to communicate with SIBS - Open Payment Platform.",
+  "homepage": "https://github.com/apoca/laravel-sibs-payments",
+  "type": "library",
+  "keywords": [
+    "http",
+    "rest",
+    "mbway",
+    "payments",
+    "web service",
+    "sibs",
+    "laravel",
+    "mobile payment",
+    "VISA",
+    "MASTER",
+    "AMEX",
+    "VPAY",
+    "MAESTRO",
+    "VISADEBIT",
+    "VISAELECTRON"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Miguel Vieira",
+      "email": "vieira@miguelvieira.com.pt",
+      "homepage": "http://www.miguelvieira.com.pt"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "ext-json": "*",
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "require-dev": {
+    "laravel/framework": "^5.8",
+    "mockery/mockery": "^1.2",
+    "orchestra/testbench": "^3.8",
+    "php-coveralls/php-coveralls": "^2.1",
+    "phpunit/php-code-coverage": "^7.0",
+    "phpunit/phpunit": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Apoca\\Sibs\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Apoca\\Sibs\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Apoca\\Sibs\\SibsServiceProvider"
+      ],
+      "aliases": {
+        "Sibs": "Apoca\\Sibs\\Facade\\Sibs"
+      }
+    }
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpunit --colors=always --debug --filter"
+    ],
+    "tests": [
+      "php -d memory_limit=512M vendor/bin/phpunit --colors=always --bootstrap vendor/autoload.php --testdox tests"
+    ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

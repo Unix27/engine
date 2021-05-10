@@ -1,0 +1,387 @@
+@media(max-width: 600px){
+  .main__header .newLogo{
+    margin-right: 0;
+  }
+}
+
+.webshop-showbasket{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  color: #868686;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.webshop-showbasket{
+  .white-bg{
+    background-color: white;
+    padding-top: 1.2rem;
+    border-radius: 1rem;
+    margin-bottom: 1.2rem!important;
+  }
+
+  h1{
+    margin: 0;
+    margin-bottom: 20px!important;
+    font-size: 30px;
+  }
+  a,a:hover{
+    text-decoration: none;
+  }
+
+  @media(max-width: 991px){
+    .checkout-b h3{
+      clear: both!important;
+    }
+  }
+
+  .products_div {
+    padding-right: 60px;
+    border-right: 1px solid #ebebeb;
+  }
+  .ShowBasket_Custom_DIV .product {
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  .product .ProductImage_ShowBasket {
+    width: 100% !important;
+  }
+  img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+  }
+  .product .product_title {
+    line-height: 1.2;
+  }
+  .product .product_title a {
+    color: #121212;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .product .product_price {
+    color: #121212;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  .product .delete a {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .product .delete a::before {
+    content: "\f00d";
+    font-family: FontAwesome;
+    color: #121212;
+    font-size: 15px;
+  }
+  .product .delete a img {
+    display: none;
+  }
+
+  .product .descrease a {
+    background: #ebebeb;
+    border: 1px solid #ebebeb;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    color: #121212;
+    text-align: center;
+    vertical-align: middle;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  .product .descrease a::before {
+    content: "-";
+  }
+  .product .descrease a img {
+    display: none;
+  }
+  .product .amount {
+    border: 1px solid #ebebeb;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: -5px;
+    margin-right: -5px;
+    line-height: 28px;
+  }
+  .product .increase a {
+    background: #ebebeb;
+    border: 1px solid #ebebeb;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    color: #121212;
+    text-align: center;
+    vertical-align: middle;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+  .product .increase a::before {
+    content: "+";
+  }
+  .product .increase a img {
+    display: none;
+  }
+  @media (min-width:991px){
+    .order_details_div {
+      padding-left: 60px;
+    }
+  }
+
+  .basket_description {
+    margin: 0 0 20px 0;
+  }
+  h3, .footer .footer_title, .webshop-productinfo .single_product-price .single_product-price-price, .basket_description, .webshop-checkout .primary_inner #checkout-container h2, .webshop-checkout .primary_inner #checkout-container .focus_boxes_headline, .webshop-checkout .primary_inner #checkout-container .single_product-also-bought-headline, .webshop-checkout .primary_inner #checkout-container .single_product-related-headline, .webshop-checkout .primary_inner #checkout-container #instagram_Feed .frontpage_instagram-headline, #instagram_Feed .webshop-checkout .primary_inner #checkout-container .frontpage_instagram-headline, .webshop-checkout .primary_inner #checkout-container h3, .h3 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .basket_fee {
+    color: #70777b;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .basket_fee {
+    color: #70777b;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .basket_total {
+    color: #121212;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .basket_total_price {
+    color: #121212;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .order_now_btn {
+    margin: 15px 0 30px 0;
+    display: block;
+    background: #FF4E15;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 100%;
+    border: 0;
+  }
+  .basketMemberInfo > p {
+    width: calc(100% - 20px);
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+    line-height: normal;
+  }
+  .basketMemberInfo a {
+    text-decoration: underline;
+  }
+  a {
+    color: #868686;
+  }
+
+  #primary{
+    margin: 0 auto;
+    float: none;
+  }
+  h1{
+    margin-bottom: 20px;
+  }
+  .clear_button .Order_empty_basket {
+    margin: -10px 0 20px 0;
+    float: right;
+    display: inline-block;
+    color: #FF4E15;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .order_now_btn:hover {
+    background: #FF7247;
+  }
+
+  .checkout-b{
+    border-right: 1px solid #DDD;
+  }
+  .checkout-b h3{
+    background-color: #0177e4;
+    color: white;
+    font-weight: 400;
+
+    font-size: 25px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 24px;
+  }
+  @media (max-width: 991px){
+    .primary_inner > .row > div{
+      clear:both;
+    }
+    .fix-class-1{
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .pricetable .col-md-1{
+      width: 10.66666667%!important;
+      float: left;
+    }
+    .pricetable .col-md-8{
+      width: 50%!important;
+      float: left;
+    }
+    .pricetable .col-md-3{
+      width: 30%!important;
+      float: left;
+    }
+    .pricetable .col-md-9{
+      width: 50%!important;
+      float: left;
+    }
+    .pricetable .col-md-2{
+      width: 30%!important;
+      float: left;
+    }
+  }
+  @media (min-width: 991px){
+    .checkout-b2{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  .title-heading{
+    color: black;
+    font-weight: 700;
+  }
+  .pricetable{
+    font-size: 14px;
+  }
+  .br-none{
+    border-right: 0!important;
+  }
+  .last-el{
+    text-align: right;
+  }
+  .ft-z{
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+  }
+  .specialhr{
+    height: 1px;
+    display: block;
+    clear: both;
+  }
+
+  .primary_inner{
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .changeFormBtns a{
+    border: 2px solid #ff4e15;
+
+    margin: 0 0 15px 0;
+    display: block;
+    background: transparent;
+    color: #FF4E15;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 100%;
+
+    outline: none;
+  }
+  .changeFormBtns a.active{
+    color: #fff;
+    background: #FF4E15;
+  }
+
+  @media(max-width:600px){
+    .products_div{
+      padding-left: 15px!important;
+      padding-right: 15px!important;
+    }
+
+    .checkout-b2{
+      clear:both;
+    }
+    .col-xs-12{
+      clear:both;
+    }
+  }
+
+  & .checkout-terms a{
+    color: #428bca;
+    text-decoration: none;
+  }
+}
+
+.cart.placeholder_bottom{
+  margin-top: 22px;
+}
+
+.cart{
+  .usp_boxes .ups_container > i {
+    font-size: 24px;
+    line-height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .usp_boxes .ups_container, .usp_boxes .ups_container, .usp_boxes .ups_container {
+    background: transparent;
+  }
+  .usp_boxes .ups_container {
+    background: transparent;
+    color: #121212;
+  }
+  .usp_boxes .ups_container > .ups_text {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: -12px;
+    vertical-align: middle;
+  }
+  .usp_boxes .ups_container > .ups_text strong {
+    text-transform: uppercase;
+  }
+  .usp_boxes{
+    margin-bottom: 20px;
+  }
+
+  @media(max-width:600px){
+    .ups_container > i{
+      display: block;
+      text-align: center;
+    }
+    .ups_container > .ups_text{
+      text-align: center;
+      display: block!important;
+    }
+  }
+}

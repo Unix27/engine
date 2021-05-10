@@ -1,0 +1,5 @@
+*
+!public/
+!../../public/storage/app/default/
+!reviews.json
+!.gitignore

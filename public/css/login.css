@@ -1,0 +1,70 @@
+/* Modal */
+@media screen and (min-width: 768px) {
+  .modal-dialog {
+    width: 600px;
+    max-width: 950px;
+  }
+  #quickLogin .modal-dialog {
+    width: 700px;
+  }
+  #quickLogin .modal-sm {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .modal-dialog {
+    width: 600px;
+    max-width: 950px;
+  }
+  .modal-lg {
+    width: 900px;
+  }
+  #quickLogin .modal-lg {
+    width: 950px;
+  }
+}
+
+/* Modal zIndex */
+.modal-backdrop {
+  z-index: 1960 !important;
+}
+
+.modal {
+  z-index: 1979;
+}
+
+.modal-dialog {
+  z-index: 2000;
+}
+
+/* Inner box */
+.inner-box {
+  background: #f5f5f5 none repeat scroll 0 0;
+  margin-bottom: 0;
+  padding: 20px 15px;
+}
+
+.inner-box.default-inner-box,
+.section-content > .inner-box {
+  margin-bottom: 30px;
+}
+
+.page-content .inner-box {
+  overflow: hidden;
+  padding: 15px;
+}
+
+.page-content .items-details-wrapper.inner-box {
+  /*padding-bottom: 0;*/
+}
+
+.items-details-wrapper .content-footer {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.page-content .inner-box .title-2 {
+  margin: 5px 0 25px;
+  padding: 0 0 20px;
+}

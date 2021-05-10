@@ -1,0 +1,540 @@
+@media (min-width: 1751px) {
+/*
+    .title-1 {
+        max-width: 405px;
+    }
+    */
+  }
+
+  /* ---------- Very Large Screen  ----------*/
+  @media (min-width: 1601px) and (max-width: 1920px) {
+    .tag {
+      height: 150px;
+      width:150px;
+      top:25%;
+      padding: 15px;
+    }
+    .tag span {
+      font-size: 14px;
+      line-height:16px;
+    }
+    .tag span.price {
+      font-size: 70px;
+    }
+    .tag span.curr {
+      font-size: 14px;
+    }
+    .tag span.incl {
+      font-size: 11px;
+      line-height: 12px;
+    }
+    .title-1 {
+      margin-top:15%;
+      max-width: 405px;
+    }
+    .title-2 {
+      font-size: 18px;
+      line-height: 18px;
+    }
+    .title-4 {
+      margin-top:18%;
+    }
+    
+  }
+  /* ---------- Large Screen  ----------*/
+  @media (min-width: 1401px) and (max-width: 1600px) {
+    .title-1 {
+      margin-top:15%;
+      max-width: 405px;
+    }
+    .title-2 {
+      font-size: 20px;
+      line-height: 20px;
+    }
+    .tag {
+      height: 150px;
+      width:150px;
+      top:25%;
+      padding: 15px;
+    }
+    .tag span {
+      font-size: 14px;
+      line-height:30px;
+    }
+    .tag span.price {
+      font-size: 70px;
+    }
+    .tag span.curr {
+      font-size: 14px;
+    }
+    .tag span.incl {
+      font-size: 11px;
+      line-height: 12px;
+    }
+    .title-4 {
+      font-size: 37px;
+      margin-bottom: 15px;
+      margin-top:14%;
+    }
+    
+  }
+
+
+  /* ---------- Large Screen  ----------*/
+  @media (min-width: 1170px) and (max-width: 1400px) {
+    .campaign-area {
+      padding-top: 0px;
+      padding-bottom: 20px;
+    }
+    
+    .form-wrap {
+      margin-top:2%;
+      margin-left:0px;
+      width:115%;
+      max-width: 415px;
+    }
+
+    .title-1 {
+      max-width: 405px;
+    }
+    .title-2 {
+      font-size: 18px;
+      line-height: 18px;
+    }
+    .title-3 {
+      font-size: 14px;
+    }
+    .tag {
+      height: 150px;
+      width:150px;
+      top:25%;
+      padding: 15px;
+    }
+    .tag span {
+      font-size: 14px;
+      line-height:30px;
+    }
+    .tag span.price {
+      font-size: 70px;
+    }
+    .tag span.curr {
+      font-size: 14px;
+    }
+    .tag span.incl {
+      font-size: 11px;
+      line-height: 12px;
+    }
+    .title-4 {
+      font-size: 34px;
+      margin-bottom: 10px;
+      margin-top:5%;
+    }
+    button.f-left {
+      font-size:13px;
+    }
+  }
+
+  /* ---------- Fix  ----------*/
+  @media (min-width: 1170px) and (max-width: 1199px) {
+    .title-2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      line-height: 20px;
+    }
+    .title-4 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      margin-top:20%;
+    }
+  }
+
+
+  /*---------- Normal desktop :992px. ----------*/
+  @media (min-width: 992px) and (max-width: 1169px) {
+    .campaign-area {
+      /*        padding-top: 60px;*/
+      padding-bottom: 25px;
+    }
+    
+    .title-2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      line-height: 20px;
+    }
+    .title-3 {
+      font-size: 13px;
+      line-height: 15px;
+    }
+    .product-info {
+      max-width: 60%;
+    }
+    .terms-info {
+      max-width: 80%;
+    }
+    .tag {
+      height: 160px;
+      width:160px;
+      top:25%;
+      padding: 15px;
+    }
+    .tag span {
+      font-size: 16px;
+      line-height:33px;
+    }
+    .tag span.price {
+      font-size: 68px;
+    }
+    .tag span.curr {
+      font-size: 14px;
+    }
+    .tag span.incl {
+      font-size: 12px;
+      line-height: 12px;
+    }
+    .title-4 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      margin-top:10%;
+    }
+
+  }
+
+  /*---------- Tablet desktop :768px. ----------*/
+  @media (min-width: 768px) and (max-width: 991px) {
+    .campaign-area {
+      /*        padding-top: 60px;*/
+      padding-bottom: 25px;
+    }
+    .campaign-area .row .col-sm-12 .col-sm-6 {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    .campaign-area .row .col-sm-12 .col-sm-6 .col-sm-12 .form-wrap .row .col-sm-6 {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    .title-2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      line-height: 18px;
+    }
+    .title-3 {
+      font-size: 12px;
+      line-height: 12px;
+    }
+    .tag {
+      height: 140px;
+      width:140px;
+      top:27%;
+      padding:10px;
+    }
+    .tag span {
+      font-size: 16px;
+      line-height:30px;
+    }
+    .tag span.price {
+      font-size: 68px;
+    }
+    .tag span.curr {
+      font-size: 14px;
+    }
+    .tag span.incl {
+      font-size: 11px;
+      line-height: 11px;
+    }
+
+    .title-4 {
+      font-size: 3.2vmax;
+      margin-bottom: 20px;
+      margin-top:10%;
+    }
+
+    /*header*/
+    .topbar {
+      position: inherit;
+    }
+    hr {
+      margin: 20px 0;
+    }
+
+    .pt-70 {
+      padding-top: 0px;
+    }
+    .product-info {
+      max-width: 70%;
+    }
+    .terms-info {
+      max-width: 90%;
+    }
+
+    button.f-left {
+      float:none;
+      width: 100%;
+    }
+    .product-tab span.icon-size img {
+      height: 100%;
+    }
+    .product-tab {
+      min-height: 350px;
+    }
+  }
+
+
+
+  /* small mobile :320px. */
+  @media (max-width: 767px) {
+    .campaign-area {
+      padding-bottom: 15px;
+      padding-top: 0px;
+    }  
+    
+    /* --------------- */
+    h3 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    p {
+     font-size: 12px;
+   }
+   .mb-80 {
+    margin-bottom: 30px;
+  }
+  .mb-40 {
+    margin-bottom: 30px;
+  }
+  /* ----------------- */
+
+  .title-2 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .title-22 {
+    padding-top:40px;
+  }
+  .layer-1-1 img {
+    padding-top: 30px;
+  }
+  /*header*/
+  .topbar {
+    position: inherit;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  p.desc {
+    font-size: 13px;
+    line-height: 21px;
+  }
+
+  input[type="text"].half, select.half {
+    width:100%;
+  }
+  .form-wrap {
+    max-width: 100%;
+    padding-top: 8%;
+  }
+  button.f-left {
+    float:none;
+    width: 100%;
+  }
+ button{
+      width: 100%!important;
+    }
+  .phone {
+    max-width: 100%;
+    margin-top: 6%;
+    vertical-align: baseline;
+    display: inline-block;
+    padding-top: 5%;
+  }
+  .title-2, .title-4, p.desc, p.spec {
+    text-align: center;
+  }
+  .img {
+    margin-left: 0%;
+  }
+  .title-1 {
+    margin-top: 5%;
+    margin-left: 0%;
+  }
+  .title-2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .title-4 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top:0%;
+  }
+
+  .pt-70 {
+    padding-top: 10%;
+  }
+  .product-info {
+    max-width: 80%;
+  }
+  .tag {
+    height: 150px;
+    width:150px;
+    top:20%;
+    padding: 15px;
+    left:72%;
+    overflow:hidden;
+  }
+  .tag span {
+    font-size: 14px;
+    line-height:30px;
+  }
+  .tag span.price {
+    font-size: 70px;
+  }
+  .tag span.curr {
+    font-size: 14px;
+  }
+  .tag span.incl {
+    font-size: 11px;
+    line-height: 12px;
+  }
+  .pad {
+    margin-bottom: 0%;
+  }
+
+  .product-tab li {
+    width: 50%;
+    top:10px;
+  }
+  .product-tab-2 {
+    padding-bottom: 40px;
+  }
+  h4 {
+    padding-left:3px;
+    padding-bottom: 6%;
+    border-bottom-style: solid;
+    border-bottom-color: #151515;
+    border-bottom-width: 1px;
+  }
+
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+  .go-to-btn {
+    right: 30%;
+  }
+  .product-info {
+    max-width: 100%;
+  }
+  .terms-info {
+    max-width: 100%;
+  }
+  .terms-info h6 {
+    padding:0;
+  }
+
+  .product-tab .spec-wrapper .inner-wrap {
+    padding-top: 170px;
+  }
+  .product-tab-2 .spec-wrapper .inner-wrap {
+    padding-top: 25px;
+  }
+  h4 {
+    font-size: 20px;
+    padding-top: 0%;
+    /*padding-bottom: 2%;*/
+  }
+  .pl-70 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+}
+/* FIX */
+@media only screen and (min-width: 480px) and (max-width: 515px) {
+  .tag {
+    left:70%;
+    top:5%;
+  }
+}
+
+
+/* Small Mobile :0-479px. */
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+
+  .go-to-btn {
+    right: 30%;
+  }
+  .tag {
+    height: 105px;
+    width: 105px;
+    top: 45%;
+    padding: 8px;
+    left: 67%;
+  }
+  .tag span {
+    font-size: 10px;
+    line-height: 11px;
+  }
+  .tag span.price {
+    font-size: 40px;
+    line-height: 42px;
+  }
+  .tag span.curr {
+    font-size: 14px;
+  }
+  .tag span.incl {
+    font-size: 9px;
+    line-height: 9px;
+  }
+  .product-info {
+    max-width: 100%;
+  }
+  .terms-info {
+    max-width: 100%;
+  }
+  .terms-info h6 {
+    padding:0;
+  }
+  .pl-70 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .product-tab li {
+    width: 100%;
+    top:10px;
+  }
+  .product-tab ul li .spec-wrapper {
+    padding-right: 0px;
+  }
+  .product-tab .spec-wrapper {
+    text-align: center;
+  }
+  .product-tab .spec-wrapper .inner-wrap {
+    padding-left: 0;
+    padding-top: 50%;
+  }
+  .product-tab-2 .spec-wrapper .inner-wrap {
+    padding-top: 10%;
+  }
+  .product-tab .spec-wrapper .icon {
+    margin-left: auto;
+    margin-right: auto;
+    left:0;
+    right: 0;
+    width:200px;
+  }
+  h4 {
+    font-size: 16px;
+    /*margin-bottom: 12%;*/
+    text-align: center;
+  }
+
+}
+
+/* FIX */
+@media only screen and (min-width: 400px) and (max-width: 479px) {
+  .tag {
+    left: 65%;
+  }
+}

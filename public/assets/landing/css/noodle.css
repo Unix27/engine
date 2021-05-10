@@ -1,0 +1,189 @@
+html,
+body {
+    height: 100%;
+    padding-top: 30px;
+}
+
+body.xpz {
+    /*background: linear-gradient(to right, #a12c88 0%, #5f1a50 100%);*/
+    color: #fff;
+    padding-top: 0 !important;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 30px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #ffc83e;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #ffc83e;
+    background: #fdf7f7;
+    border-left: 3px solid #fff4b6;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .nav li > form > button.logout {
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+.btn-100 {
+    width: 100%;
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.--spin {
+    animation: spin 1s infinite linear;
+}
+
+.exp-title {
+    color: #00C0C4;
+    font-weight: bold;
+
+    font-size: 5rem;
+}
+
+.btn-exp {
+    background-image: linear-gradient(to left, #00C0C4 0%, #0260EE 100%);
+    box-shadow: 0 2px 6px 0 rgba(50, 50, 50, 0.16);
+    color: white !important;
+    border: none;
+
+    transition: 0.3s;
+}
+
+.btn-exp:hover, .btn-exp:active {
+    color: rgba(255, 255, 255, 0.7) !important;
+    border: none;
+}
+
+
+.modal-exp {
+    /*background: linear-gradient(to left, #a12c88 0%, #5f1a50 100%);*/
+    color: #0260EE;
+}
+
+.color-blue {
+    color: #0177e4;
+}
+
+@media (max-width: 600px) {
+    .exp-title {
+        font-size: 1.8rem;
+    }
+}
+
+.you-won {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+    .you-won {
+        font-size: 1.2rem;
+    }
+}

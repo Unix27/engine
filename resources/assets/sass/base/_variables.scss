@@ -1,0 +1,28 @@
+// Typography
+$font-family: "Formular-Regular", Arial, sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #0177e4;
+$blueHov: #256ed2;
+$grey: #909090;
+
+// Gradient
+$gradient_main: linear-gradient(to right, #6D99D5 0%, $blue 100%);
+$gradient_hover: linear-gradient(to right, #648CC3 0%, #1E5AAF 100%);
+$gradient_disabled: linear-gradient(to right, #d4d5d6 0%, $grey 100%);
+$gradient_disabled_hover: linear-gradient(to right, #d4d5d6 0%, $grey 100%);
+
+$desktop-l: 1460px;
+$desktop-m: 1280px;
+$desktop-mm: 1130px;
+$desktop-s: 1030px;
+$tablet-l: 999px;
+$tablet-mm: 830px;
+$tablet-m: 768px;
+$tablet-s: 670px;
+$mobile-l: 590px;
+$mobile-m: 470px;
+$mobile-s: 370px;
+$mobile-i: 340px;

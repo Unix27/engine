@@ -1,0 +1,138 @@
+<?php
+
+namespace App\Observer;
+
+use App\Helpers\Files\Storage\StorageDisk;
+use App\Models\CategoryField;
+use App\Models\Field;
+use App\Models\FieldOption;
+use App\Models\PostValue;
+use App\Models\ProductField;
+use App\Models\ProductFieldOption;
+
+class FieldObserver extends TranslatedModelObserver
+{
+	/**
+	 * Listen to the Entry updating event.
+	 *
+	 * @param Field $field
+	 * @return void
+	 */
+	public function updating(Field $field)
+	{
+		// Get fields types having options
+		$fieldTypesHavingOptions = ['checkbox_multiple', 'radio', 'select'];
+		
+		if (request()->filled('type')) {
+			// Storage Disk Init.
+			$disk = StorageDisk::getDisk();
+			
+			// Check if field has options
+			if (in_array($field->type, $fieldTypesHavingOptions) && !in_array(request()->get('type'), $fieldTypesHavingOptions)) {
+				// Delete all the Custom Field's options
+				$options = FieldOption::where('field_id', $field->id)->get();
+				if ($options->count() > 0) {
+					foreach ($options as $option) {
+						$option->delete();
+					}
+				}
+				
+				// Delete all Posts Custom Field's Values
+				$postValues = PostValue::where('field_id', $field->id)->get();
+				if ($postValues->count() > 0) {
+					foreach ($postValues as $postValue) {
+						$postValue->delete();
+					}
+				}
+			}
+			
+			// Check if field has options
+			if (!in_array($field->type, $fieldTypesHavingOptions) && in_array(request()->get('type'), $fieldTypesHavingOptions)) {
+				// Delete all Posts Custom Field's Values
+				$postValues = PostValue::where('field_id', $field->id)->get();
+				if ($postValues->count() > 0) {
+					foreach ($postValues as $postValue) {
+						// If field is of type 'file', remove files (if exists)
+						if ($field->type == 'file') {
+							if (!empty($postValue->value)) {
+								if ($disk->exists($postValue->value)) {
+									$disk->delete($postValue->value);
+								}
+							}
+						}
+						// Delete the Post's value for this field
+						$postValue->delete();
+					}
+				}
+			}
+		}
+	}
+	
+	/**
+	 * Listen to the Entry deleting event.
+	 *
+	 * @param Field $field
+	 * @return void
+	 */
+	public function deleting($field)
+	{
+		parent::deleting($field);
+		
+		// Delete all Categories Custom Fields
+		$catFields = CategoryField::where('field_id', $field->id)->get();
+		if ($catFields->count() > 0) {
+			foreach ($catFields as $catField) {
+				$catField->delete();
+			}
+		}
+
+        $productFields = ProductField::where('field_id', $field->id)->get();
+        if ($productFields->count() > 0) {
+            foreach ($productFields as $productField) {
+                $productField->delete();
+            }
+        }
+		
+		// Delete all the Custom Field's options
+		$fieldOptions = FieldOption::where('field_id', $field->id)->get();
+		if ($fieldOptions->count() > 0) {
+			foreach ($fieldOptions as $fieldOption) {
+			    $productFieldOptions =  ProductFieldOption::where('field_id', $fieldOption->option_id)->get();
+                if($productFieldOptions->count() > 0) {
+                    foreach ($productFieldOptions as $productFieldOption) {
+                        $productFieldOption->delete();
+                    }
+                }
+				$fieldOption->delete();
+			}
+		}
+		
+		// Delete all Posts Custom Field's Values
+		$postValues = PostValue::where('field_id', $field->id)->get();
+		if ($postValues->count() > 0) {
+			foreach ($postValues as $postValue) {
+				$postValue->delete();
+			}
+		}
+    }
+
+
+    /**
+     * @param \App\Models\Traits\TranslatedTrait $field
+     */
+    public function created($field)
+    {
+        parent::created($field);
+
+        $mainCategories = \App\Models\Category::where('parent_id', 0)->get();
+        foreach ($mainCategories as $cat) {
+            CategoryField::firstOrCreate(
+                [
+                    'field_id' => $field->tid,
+                    'category_id' => $cat->tid,
+                    'disabled_in_subcategories' => 0,
+                ]
+            );
+        }
+    }
+}

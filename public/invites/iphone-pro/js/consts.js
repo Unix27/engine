@@ -1,0 +1,1 @@
+var _env={apiUrl:"https://srv.ibraincollege.com/rest/",affiliateContactUrl:"https://www.geniustrainer.net/affiliateContact/affiliateContact.html"};
