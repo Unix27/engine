@@ -7,7 +7,7 @@ function setAddToCartEvents(){
   $('.vpAddToCart').off('click');
   $('.vpAddToCart').on('click',function(e){
     var ok = 1;
-
+    console.log(custom_fields_count);
     if(custom_fields_count > 0){
       for(var i = 0; i < custom_fields_count; i++){
         if(!selected_custom_fields.includes(i)){
@@ -29,6 +29,8 @@ function setAddToCartEvents(){
           'product_id': now_pid,
           'fields_set': now_set
         }});
+      console.log(now_set);
+      console.log(now_pid);
 
       $.ajax({
         headers: {

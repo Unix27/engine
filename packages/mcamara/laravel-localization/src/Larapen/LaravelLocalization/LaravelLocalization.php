@@ -24,7 +24,7 @@ use Illuminate\Support\Str;
 
 class LaravelLocalization
 {
-	// use LocalizationTrait;
+	use LocalizationTrait;
 	
 	/**
 	 * The env key that the forced locale for routing is stored in.
